@@ -1,0 +1,49 @@
+package Thread_practise;
+
+import java.util.List;
+
+public class BasicThread {
+    static int row ;
+	static int coulmn;
+   
+	public static void main(String[] args) throws InterruptedException {
+	
+
+	}
+	 public static int roverMove(int matrixSize, List<String> cmds) {
+		 
+		 for(int k = 0 ; k < cmds.size() ; k++ ){
+			 
+		 }
+		return (row * matrixSize) + coulmn;
+		
+		    }
+	 
+	 
+	 private void Up(){
+		 if(row > 0){
+			 row =- 1;
+		 }
+	 }
+	 
+	 private void Down(int matrixSize){
+		 if(row > (matrixSize-1)){
+			 row =+ 1;
+		 }
+	 }
+	 
+	 private void Left(){
+		 if(coulmn > 0){
+			 coulmn =- 1;
+		 }
+	 }
+	 
+	 private void Right(int matrixSize){
+		 if(coulmn > (matrixSize-1)){
+			 coulmn =+ 1;
+		 }
+	 }
+}
+
+
+

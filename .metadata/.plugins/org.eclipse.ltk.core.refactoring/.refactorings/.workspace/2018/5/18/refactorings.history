@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Java_Practice_Examples/src/java8tutorials/practicalexample/ProductComparator.java&apos;" deleteContents="false" description="Delete resource &apos;Java_Practice_Examples/src/java8tutorials/practicalexample/ProductComparator.java&apos;" element1="/Java_Practice_Examples/src/java8tutorials/practicalexample/ProductComparator.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1525400836283"/>
+</session>

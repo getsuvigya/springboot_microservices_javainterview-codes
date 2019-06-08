@@ -1,0 +1,18 @@
+package com.elutra.aai;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * Hello world!
+ *
+ */
+@SpringBootApplication
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	System.setProperty("spring.config.name", "aai_application");
+    	 SpringApplication.run(App.class, args);
+    }
+}

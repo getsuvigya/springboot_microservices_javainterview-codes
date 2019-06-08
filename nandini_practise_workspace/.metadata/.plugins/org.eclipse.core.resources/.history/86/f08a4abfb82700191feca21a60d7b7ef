@@ -1,0 +1,21 @@
+package Thread_practise;
+
+public class BasicThread {
+
+	public static void main(String[] args) {
+		Thread t1 = new Thread(() -> System.out.println("Thread"));
+		t1.start();
+
+		Thread t11 = new Thread(new Runnable(      ) {
+			
+			@Override
+			public void run() {
+				 System.out.println("Thread11");
+				
+			}
+		});
+		
+		t11.start();
+	}
+
+}

@@ -1,0 +1,10 @@
+package Thread_practise;
+
+public class BasicThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

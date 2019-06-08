@@ -1,0 +1,27 @@
+package Thread_practise;
+
+public class BasicThread {
+
+	public static void main(String[] args) {
+		MyThread t1  = new MyThread();
+		t1.start();
+	}
+
+}
+
+
+class MyThread extends Thread {
+	
+	@Override
+	public void run() {
+		long start =  System.currentTimeMillis();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		long end =  System.currentTimeMillis();
+		System.out.println(start-end);
+	}
+}

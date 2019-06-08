@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;max&apos; in &apos;corejavatrickyquestions.MaxApple.solution(...)&apos; to &apos;max1&apos;&#x0D;&#x0A;- Original project: &apos;Java_Practice_Examples&apos;&#x0D;&#x0A;- Original element: &apos;corejavatrickyquestions.MaxApple.solution(int[], int, int).max&apos;&#x0D;&#x0A;- Renamed element: &apos;max&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;max&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;corejavatrickyquestions{MaxApple.java[MaxApple~solution~\[I~I~I@max!989!1000!993!995!I!0!false" name="max1" references="true" stamp="1525024720275" version="1.0"/>
+</session>

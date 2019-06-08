@@ -1,0 +1,32 @@
+package JavaProgram;
+
+public class PrimeNum {
+
+	public static void main(String[] args) {
+
+		PrimeNum primeCheck = new PrimeNum();
+		System.out.println("3_-> "+primeCheck.isPrimeBySqrt(3));
+		System.out.println("30_-> "+primeCheck.isPrimeBySqrt(30));
+		System.out.println("31_-> "+primeCheck.isPrimeBySqrt(31));
+
+	}
+
+	private boolean isPrimeBySqrt(int num){
+		int sqrt = (int )Math.sqrt(num);
+		for(int i = 2 ; i <= sqrt ; i++){
+			if(num % i == 0)
+				return false;
+		}
+		return true;
+
+	}
+
+	private boolean isPrime(int num){
+		int sqrt = (int )Math.sqrt(num);
+		for(int i = 2 ; i <= sqrt ; i++){
+			if(num % i == 0)
+				return false;
+		}
+		return true;
+	}
+}

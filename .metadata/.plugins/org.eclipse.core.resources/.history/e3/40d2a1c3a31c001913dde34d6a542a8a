@@ -1,0 +1,47 @@
+package java8tutorials;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class PredicateRevision {
+public static void main(String[] args) {
+	List<Toy> toys = new ArrayList<Toy>();
+	Toy t1 = new Toy("gun", 50);
+	Toy t2 = new Toy("doll",100);
+	Toy t3 = new Toy("car", 250);
+	toys.add(t1);
+	toys.add(t2);
+	toys.add(t3);
+	Predicate<Toy> predicate = t -> {
+		return t.getPrice()>150;
+	};
+	Stream s= toys.stream();
+	Stream filteredToysByPrice = s.filter(predicate);
+	Consumer<Toy> toyConsumer = (Toy t) -> System.out.println(t.getName());
+	filteredToysByPrice.forEach(toyConsumer);
+}
+}
+class Toy{
+	private String name;
+	private Integer price;
+	public Toy(String name, Integer price){
+		this.name = name;
+		this.price = price;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getPrice() {
+		return price;
+	}
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	
+}

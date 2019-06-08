@@ -1,0 +1,25 @@
+package com.suvitutorials.serviceconsumer.controllers;
+
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.suvitutorials.serviceconsumer.models.Employee;
+
+@RestController
+@RequestMapping(value={"/suvitutorial"})
+public class EmployeeController {
+	@LoadBalanced
+	RestTemplate restTemplate=new RestTemplate();
+	@RequestMapping(value={"/getemployeebyid/{id}"}, method=RequestMethod.GET)
+public Employee getEmployeeById(@PathVariable("id") Integer id){
+		System.out.println("ID is "+id);
+		String baseUrl = "http://employee-service";
+		ResponseEntity<Employee> employee = restTemplate.getForEntity(baseUrl+"/microservice/employee/"+id, Employee.class);
+		return employee.getBody();
+}
+}
